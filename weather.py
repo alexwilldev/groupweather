@@ -2,10 +2,10 @@ import urllib.request
 import json
 
 # Partners: Alex Williams, Stephen Oliver and Makhari Russom 
-# Hometown: Clemmons, NC
+# Hometown: Anchorage, AK
 
-latitude = 36.07
-longitude = -79.79
+latitude = 61.2181
+longitude = -149.9003
 
 url = ("https://api.open-meteo.com/v1/forecast?latitude=" + str(latitude)
        + "&longitude=" + str(longitude)
