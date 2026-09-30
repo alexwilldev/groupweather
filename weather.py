@@ -21,5 +21,14 @@ rain = data["hourly"]["precipitation_probability"]
 
 print(len(times), "hours of forecast")
 
+counter = 0
+while counter <= (len(times)-1):
+    print(f"{times[counter]} {temps[counter]} F")
+    counter = counter + 1
+#     print(counter) # used to check incrementing in terminal
 
-
+# counter2 = 0
+# while counter2 <= (len(times)):
+#     print(counter2)
+#     counter2 = counter2 + 1
+# check total number of values
