@@ -51,6 +51,16 @@ while counter < len(temps):
 print(f"{count_at_or_above} hours at or above {desired} F")
 
 # task 3 (hottest hour)
+hottest_temp = temps[0]
+hottest_index = 0
+
+counter = 0
+while counter < len(temps):
+       if temps[counter] > hottest_temp:
+              hottest_temp = temps[counter]
+              hottest_index = counter
+       counter += 1
+print(f'Hottest hour: {times[hottest_index]} at {hottest_temp} F')
 
        
 
