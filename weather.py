@@ -35,7 +35,7 @@ while counter <= (len(times)-1):
 #
 
 #Task 2
-# --- Task 2: Count temps at or above user input ---
+
 
 desired = float(input("Enter a temperature to check for: "))
 
