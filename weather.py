@@ -32,3 +32,19 @@ while counter <= (len(times)-1):
 #     print(counter2)
 #     counter2 = counter2 + 1
 # check total number of values
+#
+
+#Task 2
+
+
+desired = float(input("Enter a temperature to check for: "))
+
+count_at_or_above = 0
+
+counter = 0
+while counter < len(temps):
+    if temps[counter] >= desired:
+        count_at_or_above += 1
+    counter += 1
+
+print(f"{count_at_or_above} hours at or above {desired} F")
