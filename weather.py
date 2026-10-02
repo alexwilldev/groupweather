@@ -2,7 +2,7 @@ import urllib.request
 import json
 
 # Partners: Alex Williams, Stephen Oliver and Makhari Russom 
-# Hometown: Anchorage, AK
+# Hometown: Anchorage, AK, also task 5
 
 latitude = 61.2181
 longitude = -149.9003
@@ -21,6 +21,7 @@ rain = data["hourly"]["precipitation_probability"]
 
 print(len(times), "hours of forecast")
 
+# task 1 (lines per hour)
 counter = 0
 while counter <= (len(times)-1):
     print(f"{times[counter]} {temps[counter]} F")
@@ -34,7 +35,7 @@ while counter <= (len(times)-1):
 # check total number of values
 #
 
-#Task 2
+#Task 2 (hours above an hour)
 
 
 desired = float(input("Enter a temperature to check for: "))
@@ -48,3 +49,18 @@ while counter < len(temps):
     counter += 1
 
 print(f"{count_at_or_above} hours at or above {desired} F")
+
+# task 3 (hottest hour)
+
+       
+
+# task 4 (first chance of rain)
+increment = 0
+while increment < len(rain):
+    if rain[increment] >= 50:
+        print(f"First rain chance: {times[increment]} ({rain[increment]}%)")
+        break
+    increment += 1
+else:
+    print("No rain likely today or tomorrow.")
+
